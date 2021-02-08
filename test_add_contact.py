@@ -123,6 +123,20 @@ class test_add_contacts(unittest.TestCase):
         self.return_to_home_page(wd)
         self.logout(wd)
 
+    def test_add_empty_group(self):
+        wd = self.wd
+        self.open_home_page(wd)
+        self.login(wd, username="admin", password="secret")
+        self.add_new_contact(wd)
+        self.create_contact(wd, Contact(firstname="", middlename="", lastname="",
+                            nickname="", tittle="", company="", address_company="",
+                            home_phone="", mobile_phone="", work_phone="",
+                            fax="", mail1="", mail2="", mail3="",
+                            homepage="", birthday_year="", anniversary_year="", address2="",
+                            phone2="", notes=""))
+        self.return_to_home_page(wd)
+        self.logout(wd)
+
     def tearDown(self):
         self.wd.quit()
 
