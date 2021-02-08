@@ -15,9 +15,10 @@ class test_add_contacts(unittest.TestCase):
         self.wd = webdriver.Firefox()
         self.wd.implicitly_wait(30)
 
-    def test_add_group(self):
-        wd = self.wd
+    def open_home_page(self, wd):
         wd.get("http://localhost/addressbook/")
+
+    def login(self, wd):
         wd.find_element_by_name("user").click()
         wd.find_element_by_name("user").clear()
         wd.find_element_by_name("user").send_keys("admin")
@@ -25,7 +26,12 @@ class test_add_contacts(unittest.TestCase):
         wd.find_element_by_name("pass").clear()
         wd.find_element_by_name("pass").send_keys("secret")
         wd.find_element_by_xpath("//input[@value='Login']").click()
+
+    def add_new_contact(self, wd):
         wd.find_element_by_link_text("add new").click()
+
+    def create_contact(self, wd):
+        # ввод ФИО
         wd.find_element_by_name("firstname").click()
         wd.find_element_by_name("firstname").clear()
         wd.find_element_by_name("firstname").send_keys("Anonimus")
@@ -35,9 +41,11 @@ class test_add_contacts(unittest.TestCase):
         wd.find_element_by_name("lastname").click()
         wd.find_element_by_name("lastname").clear()
         wd.find_element_by_name("lastname").send_keys("Anonomovich")
+        # ввод никнейма
         wd.find_element_by_name("nickname").click()
         wd.find_element_by_name("nickname").clear()
         wd.find_element_by_name("nickname").send_keys("Anonim_nick")
+        # ввод данных о работе и адреса компании
         wd.find_element_by_name("title").click()
         wd.find_element_by_name("title").clear()
         wd.find_element_by_name("title").send_keys("test")
@@ -47,6 +55,7 @@ class test_add_contacts(unittest.TestCase):
         wd.find_element_by_name("address").click()
         wd.find_element_by_name("address").clear()
         wd.find_element_by_name("address").send_keys("Kazan")
+        # ввод телефонных номеров (все, которые есть)
         wd.find_element_by_name("home").click()
         wd.find_element_by_name("home").clear()
         wd.find_element_by_name("home").send_keys("+7999999999")
@@ -59,6 +68,7 @@ class test_add_contacts(unittest.TestCase):
         wd.find_element_by_name("fax").click()
         wd.find_element_by_name("fax").clear()
         wd.find_element_by_name("fax").send_keys("+7235235689")
+        # ввод всех мэйлов
         wd.find_element_by_name("email").click()
         wd.find_element_by_name("email").clear()
         wd.find_element_by_name("email").send_keys("email@mail1.ru")
@@ -68,15 +78,19 @@ class test_add_contacts(unittest.TestCase):
         wd.find_element_by_name("email3").click()
         wd.find_element_by_name("email3").clear()
         wd.find_element_by_name("email3").send_keys("email@mail3.ru")
+        # ввод сайта
         wd.find_element_by_name("homepage").click()
         wd.find_element_by_name("homepage").clear()
         wd.find_element_by_name("homepage").send_keys("qxl-ex.ru")
+        # ввод даты рождения
         wd.find_element_by_name("byear").click()
         wd.find_element_by_name("byear").clear()
         wd.find_element_by_name("byear").send_keys("1990")
+        # ввод даты anniversary
         wd.find_element_by_name("ayear").click()
         wd.find_element_by_name("ayear").clear()
         wd.find_element_by_name("ayear").send_keys("2010")
+        # ввод доп адреса
         wd.find_element_by_name("address2").click()
         wd.find_element_by_name("address2").clear()
         wd.find_element_by_name("address2").send_keys("Kazan 2")
@@ -86,10 +100,24 @@ class test_add_contacts(unittest.TestCase):
         wd.find_element_by_name("notes").click()
         wd.find_element_by_name("notes").clear()
         wd.find_element_by_name("notes").send_keys("Notes")
+        # нажатие кнопки создания контакта
         wd.find_element_by_xpath("(//input[@name='submit'])[2]").click()
+
+    def return_to_home_page(self, wd):
         wd.find_element_by_link_text("home").click()
+
+    def logout(self, wd):
         wd.find_element_by_link_text("Logout").click()
-    
+
+    def test_add_group(self):
+        wd = self.wd
+        self.open_home_page(wd)
+        self.login(wd)
+        self.add_new_contact(wd)
+        self.create_contact(wd)
+        self.return_to_home_page(wd)
+        self.logout(wd)
+
     def tearDown(self):
         self.wd.quit()
 
