@@ -15,7 +15,7 @@ class TestAddGroup(unittest.TestCase):
         self.wd = webdriver.Firefox()
         self.wd.implicitly_wait(30)
 
-    def open_home_page(self, wd):
+    def open_home_page(self):
         wd = self.wd
         wd.get("http://localhost/addressbook/")
 
@@ -62,7 +62,6 @@ class TestAddGroup(unittest.TestCase):
         wd.find_element_by_link_text("Logout").click()
 
     def test_add_group(self):
-
         self.login(username="admin", password="secret")
         self.create_group(Group(name="Group1", header="Test 08.02.21", footer="test 08.02.21"))
         self.logout()
