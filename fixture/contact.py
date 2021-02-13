@@ -85,6 +85,17 @@ class ContactHepler:
         wd.find_element_by_xpath("(//input[@name='submit'])[2]").click()
         self.return_to_home_page()
 
+    def delete_first_contact(self):
+        wd = self.app.wd
+        wd.find_element_by_link_text("home").click()
+        # Выбрать первый контакт
+        wd.find_element_by_name('selected[]').click()
+        # Удалить контакт
+        wd.find_element_by_xpath("//input[@value='Delete']").click()
+        # Подтверждение удаления
+        wd.switch_to_alert().accept()
+        self.return_to_home_page()
+
     def return_to_home_page(self):
         wd = self.app.wd
         wd.find_element_by_link_text("home").click()
