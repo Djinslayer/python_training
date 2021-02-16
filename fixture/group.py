@@ -8,12 +8,9 @@ class GroupHepler:
     def open_group_page(self):
         wd = self.app.wd
         wd.find_element_by_link_text("groups").click()
-
-    def create(self, group):
+        
+    def fill_form(self, group):
         wd = self.app.wd
-        self.open_group_page()
-        # создание новой группы
-        wd.find_element_by_name("new").click()
         # заполнение формы
         wd.find_element_by_name("group_name").click()
         wd.find_element_by_name("group_name").clear()
@@ -24,6 +21,13 @@ class GroupHepler:
         wd.find_element_by_name("group_footer").click()
         wd.find_element_by_name("group_footer").clear()
         wd.find_element_by_name("group_footer").send_keys(group.footer)
+
+    def create(self, group):
+        wd = self.app.wd
+        self.open_group_page()
+        # создание новой группы
+        wd.find_element_by_name("new").click()
+        self.fill_form(group)
         # нажатие кнопки создание группы
         wd.find_element_by_name("submit").click()
         self.return_to_groups_page()
@@ -44,16 +48,7 @@ class GroupHepler:
         wd.find_element_by_name('selected[]').click()
         # Нажать изменить группу
         wd.find_element_by_name('edit').click()
-        # Изменение данных группы
-        wd.find_element_by_name("group_name").click()
-        wd.find_element_by_name("group_name").clear()
-        wd.find_element_by_name("group_name").send_keys(group.name)
-        wd.find_element_by_name("group_header").click()
-        wd.find_element_by_name("group_header").clear()
-        wd.find_element_by_name("group_header").send_keys(group.header)
-        wd.find_element_by_name("group_footer").click()
-        wd.find_element_by_name("group_footer").clear()
-        wd.find_element_by_name("group_footer").send_keys(group.footer)
+        self.fill_form(group)
         # нажатие кнопки изменения группы
         wd.find_element_by_name("update").click()
         self.return_to_groups_page()
