@@ -11,3 +11,15 @@ def test_modify_first_contact(app):
                             birthday_year="2000", anniversary_year="2020", address2="Kazan 2_mod",
                             phone2="Home_mod", notes="Notes_mod"))
         app.session.logout()
+
+
+def test_modify_contact_fio(app):
+    app.session.login(username="admin", password="secret")
+    app.contact.modify_first_contact(Contact(firstname="Mod", middlename="Mod", lastname="Mod"))
+    app.session.logout()
+
+
+def test_modify_contact_conpany(app):
+    app.session.login(username="admin", password="secret")
+    app.contact.modify_first_contact(Contact(company="Mod", address_company="Mod"))
+    app.session.logout()
