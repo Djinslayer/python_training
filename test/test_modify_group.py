@@ -2,17 +2,11 @@ from model.group import Group
 
 
 def test_modify_first_group(app):
-    app.session.login(username="admin", password="secret")
     app.group.modify_first_group(Group(name="Group_Mod", header="Test 08.02.21_mod", footer="test 08.02.21_mod"))
-    app.session.logout()
 
 def test_modify_group_name(app):
-    app.session.login(username="admin", password="secret")
     app.group.modify_first_group(Group(name="modify"))
-    app.session.logout()
 
 
 def test_modify_group_header(app):
-    app.session.login(username="admin", password="secret")
     app.group.modify_first_group(Group(header="modify header"))
-    app.session.logout()
