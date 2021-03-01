@@ -9,6 +9,13 @@ class ContactHepler:
         wd = self.app.wd
         wd.find_element_by_link_text("add new").click()
 
+    def open_home_page(self):
+        wd = self.app.wd
+        if not (wd.current_url.endswith('/addressbook/') and
+                len(wd.find_elements_by_xpath("//input[@value='Send e-Mail']")) > 0):
+            wd.find_element_by_link_text("home").click()
+
+
     def change_field_value(self, field_name, text):
         wd = self.app.wd
         if text is not None:
@@ -50,6 +57,7 @@ class ContactHepler:
 
     def create(self, contact):
         wd = self.app.wd
+        self.open_home_page()
         self.add_new_contact()
         self.fill_contact_form(contact)
         # нажатие кнопки создания контакта
@@ -58,7 +66,7 @@ class ContactHepler:
 
     def delete_first_contact(self):
         wd = self.app.wd
-        wd.find_element_by_link_text("home").click()
+        self.open_home_page()
         self.select_first_contact()
         # Удалить контакт
         wd.find_element_by_xpath("//input[@value='Delete']").click()
@@ -72,7 +80,7 @@ class ContactHepler:
 
     def modify_first_contact(self, new_contact_data):
         wd = self.app.wd
-        wd.find_element_by_link_text("home").click()
+        self.open_home_page()
         self.select_first_contact()
         # нажать на изменение контакта
         wd.find_element_by_xpath("//img[@alt='Edit']").click()
