@@ -17,16 +17,16 @@ def test_add_contact(app):
     assert sorted(old_contacts, key=Contact.id_or_max) == sorted(new_contact, key=Contact.id_or_max)
 
 
-def test_add_empty_contact(app):
-    old_contacts = app.contact.get_contact_list()
-    contact = Contact(firstname="", middlename="", lastname="",
-                               nickname="", tittle="", company="", address_company="",
-                               home_phone="", mobile_phone="", work_phone="",
-                               fax="", mail1="", mail2="", mail3="",
-                               homepage="", birthday_year="", anniversary_year="", address2="",
-                               phone2="", notes="")
-    app.contact.create(contact)
-    assert len(old_contacts) + 1 == app.contact.count()
-    new_contact = app.contact.get_contact_list()
-    old_contacts.append(contact)
-    assert sorted(old_contacts, key=Contact.id_or_max) == sorted(new_contact, key=Contact.id_or_max)
+#def test_add_empty_contact(app):
+#    old_contacts = app.contact.get_contact_list()
+#    contact = Contact(firstname="", middlename="", lastname="",
+#                               nickname="", tittle="", company="", address_company="",
+#                               home_phone="", mobile_phone="", work_phone="",
+#                               fax="", mail1="", mail2="", mail3="",
+#                               homepage="", birthday_year="", anniversary_year="", address2="",
+#                               phone2="", notes="")
+#    app.contact.create(contact)
+#    assert len(old_contacts) + 1 == app.contact.count()
+#    new_contact = app.contact.get_contact_list()
+#    old_contacts.append(contact)
+#    assert sorted(old_contacts, key=Contact.id_or_max) == sorted(new_contact, key=Contact.id_or_max)
