@@ -119,4 +119,4 @@ class ContactHepler:
             lastname = element.find_element_by_xpath("./td[2]").text
             id = element.find_element_by_name("selected[]").get_attribute("value")
             contacts_list.append(Contact(firstname=firstname, lastname=lastname, id=id))
-            return list(self.contacts_list)
+        return contacts_list
