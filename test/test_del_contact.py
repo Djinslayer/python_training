@@ -11,4 +11,3 @@ def test_delete_some_contact(app):
     new_contact = app.contact.get_contact_list()
     old_contacts[index:index+1] = []
     assert sorted(old_contacts, key=Contact.id_or_max) == sorted(new_contact, key=Contact.id_or_max)
-
