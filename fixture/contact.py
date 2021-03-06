@@ -43,7 +43,7 @@ class ContactHepler:
         # ввод данных о работе и адреса компании
         self.change_field_value('title', contact.tittle)
         self.change_field_value('company', contact.company)
-        self.change_field_value('address', contact.address_company)
+        self.change_field_value('address', contact.address)
         # ввод телефонных номеров (все, которые есть)
         self.change_field_value('home', contact.home_phone)
         self.change_field_value('mobile', contact.mobile_phone)

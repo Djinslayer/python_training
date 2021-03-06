@@ -5,11 +5,19 @@ from fixture.contact import ContactHepler
 
 class Application:
 
-    def __init__(self):
-        self.wd = webdriver.Firefox()
+    def __init__(self, browser, base_Url):
+        if browser == 'firefox':
+            self.wd = webdriver.Firefox()
+        elif browser == 'chrome':
+            self.wd = webdriver.Chrome()
+        elif browser == 'ie':
+            self.wd = webdriver.Ie()
+        else:
+            raise ValueError('Onrecognized browser %s' % browser)
         self.session = SessionHelper(self)
         self.group = GroupHepler(self)
         self.contact = ContactHepler(self)
+        self.base_Url = base_Url
 
     def is_valid(self):
         try:
@@ -20,7 +28,7 @@ class Application:
 
     def open_home_page(self):
             wd = self.wd
-            wd.get("http://localhost/addressbook/")
+            wd.get(self.base_Url)
 
     def destroy(self):
         self.wd.quit()
