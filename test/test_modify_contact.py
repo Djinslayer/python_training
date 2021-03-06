@@ -8,12 +8,12 @@ def test_modify_some_contact(app):
     old_contacts = app.contact.get_contact_list()
     index = randrange(len(old_contacts))
     contact = Contact(firstname="Anonimus_mod", middlename="Anonim_mod",
-                        lastname="Anonomovich_mod", nickname="Anonim_nick_mod", tittle="test_mod", company="MTS_mod",
-                        address_company="Kazan_mod", home_phone="+7999999999_mod", mobile_phone="+7888888888_mod",
-                        work_phone="+7562562562_mod", fax="+7235235689_mod", mail1="email@mail1.ru_mod",
-                        mail2="email@mail2.ru_mod", mail3="email@mail3.ru_mod", homepage="qxl-ex.ru_mod",
-                        birthday_year="2000", anniversary_year="2020", address2="Kazan 2_mod",
-                        phone2="Home_mod", notes="Notes_mod")
+                      lastname="Anonomovich_mod", nickname="Anonim_nick_mod", tittle="test_mod", company="MTS_mod",
+                      address="Kazan_mod", home_phone="+7999999999_mod", mobile_phone="+7888888888_mod",
+                      work_phone="+7562562562_mod", fax="+7235235689_mod", mail1="email@mail1.ru_mod",
+                      mail2="email@mail2.ru_mod", mail3="email@mail3.ru_mod", homepage="qxl-ex.ru_mod",
+                      birthday_year="2000", anniversary_year="2020", address2="Kazan 2_mod",
+                      phone2="Home_mod", notes="Notes_mod")
     contact.id = old_contacts[index].id
     app.contact.modify_contact_by_index(index, contact)
     assert len(old_contacts) == app.contact.count()

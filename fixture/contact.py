@@ -138,27 +138,34 @@ class ContactHepler:
             self.contact_cache = []
             for element in wd.find_elements_by_xpath("//tr[@name='entry']"):
                 part = element.find_elements_by_tag_name('td')
-                firstname = part[2].text
-                lastname = part[1].text
                 id = part[0].find_element_by_tag_name('input').get_attribute("value")
-                all_phones = part[5].text.splitlines()
+                lastname = part[1].text
+                firstname = part[2].text
+                address = part[3].text
+                all_email = part[4].text
+                all_phones = part[5].text
                 self.contact_cache.append(Contact(firstname=firstname, lastname=lastname, id=id,
-                                                  home_phone=all_phones[0], mobile_phone=all_phones[1],
-                                                  work_phone=all_phones[2], phone2=all_phones[3]))
+                                                  all_phones_from_home_page=all_phones, address=address,
+                                                  all_email_from_home_page=all_email))
         return list(self.contact_cache)
 
     def get_contact_info_from_edit_page(self, index):
         wd = self.app.wd
         self.open_contact_to_edit_by_index(index)
-        firstname = wd.find_element_by_name('firstname').get_attribute("value")
-        lastname = wd.find_element_by_name('lastname').get_attribute("value")
         id = wd.find_element_by_name('id').get_attribute("value")
+        lastname = wd.find_element_by_name('lastname').get_attribute("value")
+        firstname = wd.find_element_by_name('firstname').get_attribute("value")
+        address = wd.find_element_by_name('address').get_attribute("value")
+        mail1 = wd.find_element_by_name('email').get_attribute("value")
+        mail2 = wd.find_element_by_name('email2').get_attribute("value")
+        mail3 = wd.find_element_by_name('email3').get_attribute("value")
         home_phone = wd.find_element_by_name('home').get_attribute("value")
         mobile_phone = wd.find_element_by_name('mobile').get_attribute("value")
         work_phone = wd.find_element_by_name('work').get_attribute("value")
         phone2 = wd.find_element_by_name('phone2').get_attribute("value")
-        return Contact(firstname=firstname, lastname=lastname, id=id, home_phone=home_phone, mobile_phone=mobile_phone,
-                       work_phone=work_phone, phone2=phone2)
+        return Contact(id=id, lastname=lastname, firstname=firstname, address=address, mail1=mail1, mail2=mail2,
+                       mail3=mail3, home_phone=home_phone, mobile_phone=mobile_phone, work_phone=work_phone,
+                       phone2=phone2)
 
     def get_contact_info_from_view_page(self, index):
         wd = self.app.wd
