@@ -1,21 +1,26 @@
 from model.contact import Contact
 import random
 import string
+import os.path
+import json
+import getopt
+import sys
 
-constant = [
-    Contact(firstname=('firstname'), middlename=('middlename'), lastname=('lastname'), nickname=('nickname'),
-            tittle=('tittle'), company=('company'), address=('address'), home_phone=('home_phone'),
-            mobile_phone=('mobile_phone'), work_phone=('work_phone'), fax=('fax'), mail1=('mail1'), mail2=('mail2'),
-            mail3=('mail3'), homepage=('homepage'), bday='9', bmonth='November', birthday_year='1990',
-            aday="20", amonth="April", anniversary_year="2010", address2=('address2'), phone2=('phone2'), notes=('notes')),
-    Contact(firstname=('firstname1'), middlename=('middlename1'), lastname=('lastname1'), nickname=('nickname1'),
-            tittle=('tittle1'), company=('company1'), address=('address1'), home_phone=('home_phone1'),
-            mobile_phone=('mobile_phone1'), work_phone=('work_phone1'), fax=('fax1'), mail1=('mail11'), mail2=('mail21'),
-            mail3=('mail31'), homepage=('homepage1'), bday='9', bmonth='November', birthday_year='1990',
-            aday="20", amonth="April", anniversary_year="2010", address2=('address21'), phone2=('phone21'),
-            notes=('notes1'))
-]
 
+try:
+    opts, args = getopt.getopt(sys.argv[1:], "n:f:", ["number of groups", "file"])
+except getopt.GetoptError as err:
+    getopt.usage()
+    sys.exit(2)
+
+n = 5
+f = 'data/contacts.json'
+
+for o, a in opts:
+    if o == '-n':
+        n = int(a)
+    elif o == '-f':
+        f = a
 
 def random_string(prefix, maxlen):
     symbols = string.ascii_letters + string.digits + ' ' * 10
@@ -38,3 +43,8 @@ testdata = [Contact(firstname="", middlename="", lastname="", nickname="", tittl
                        notes=random_string('notes', 12))
                for i in range(5)
            ]
+
+file = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', f)
+
+with open(file, 'w') as out:
+    out.write(json.dumps(testdata, default=lambda x: x.__dict__, indent=2))

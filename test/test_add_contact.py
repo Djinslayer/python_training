@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 from model.contact import Contact
 import pytest
 from data.add_contact import constant as testdata
