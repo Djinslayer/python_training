@@ -20,15 +20,3 @@ def test_modify_some_contact(app):
     new_contact = app.contact.get_contact_list()
     old_contacts[index] = contact
     assert sorted(old_contacts, key=Contact.id_or_max) == sorted(new_contact, key=Contact.id_or_max)
-
-
-#def test_modify_contact_fio(app):
-#    if app.contact.count() == 0:
-#        app.contact.create(Contact(firstname="Anonimus", middlename="Anonim", lastname="Anonomovich"))
-#    app.contact.modify_first_contact(Contact(firstname="Mod", middlename="Mod", lastname="Mod"))
-
-
-#def test_modify_contact_conpany(app):
-#    if app.contact.count() == 0:
-#        app.contact.create(Contact(firstname="Anonimus", middlename="Anonim", lastname="Anonomovich"))
-#    app.contact.modify_first_contact(Contact(company="Mod", address_company="Mod"))
