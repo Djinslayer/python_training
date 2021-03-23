@@ -89,12 +89,27 @@ class ContactHepler:
         self.return_to_home_page()
         self.contact_cache = None
 
+    def delete_contact_by_id(self, id):
+        wd = self.app.wd
+        self.open_home_page()
+        self.select_contact_by_id(id)
+        # Удалить контакт
+        wd.find_element_by_xpath("//input[@value='Delete']").click()
+        # Подтверждение удаления
+        wd.switch_to_alert().accept()
+        self.return_to_home_page()
+        self.contact_cache = None
+
     def delete_first_contact(self):
         self.delete_contact_by_index(0)
 
     def select_contact_by_index(self, index):
         wd = self.app.wd
         wd.find_elements_by_name('selected[]')[index].click()
+
+    def select_contact_by_id(self, id):
+        wd = self.app.wd
+        wd.find_element_by_id("%s" % id).click()
 
     def select_first_contact(self):
         self.select_contact_by_index(0)
