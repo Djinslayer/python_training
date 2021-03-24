@@ -20,14 +20,13 @@ def test_all_info_on_home_page_and_db(app, db):
     if len(db.get_contact_list()) == 0:
         app.contact.create(Contact(firstname="Anonimus", middlename="Anonim", lastname="Anonomovich"))
     ui_list = app.contact.get_contact_list()
-    def clean(contact):
-        return Contact(id=contact.id, firstname=contact.firstname.strip(), lastname=contact.lastname.strip(),
-                       address=contact.address.strip(), mail1=contact.mail1.strip(), mail2=contact.mail2.strip(),
-                       mail3=contact.mail3.strip(), home_phone=contact.home_phone.strip(),
-                       mobile_phone=contact.mobile_phone.strip(), work_phone=contact.work_phone.strip(),
-                       phone2=contact.phone2.strip())
-    db_list = map(clean, db.get_contact_list())
-    assert sorted(ui_list, key=Contact.id_or_max) == sorted(db_list, key=Contact.id_or_max)
+    db_list = db.get_contact_list()
+    assert len(ui_list) == len(db_list)
+    ui_list_sorted = sorted(ui_list, key=Contact.id_or_max)
+    db_list_sorted = sorted(db_list, key=Contact.id_or_max)
+    for i in range(len(db_list)):
+        assert merge_emails_like_on_home_page(db_list_sorted[i]) == ui_list_sorted[i].all_email_from_home_page
+        assert merge_phones_like_on_home_page(db_list_sorted[i]) == ui_list_sorted[i].all_phones_from_home_page
 
 
 def clear(s):
