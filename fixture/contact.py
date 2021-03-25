@@ -1,4 +1,3 @@
-
 from selenium.webdriver.support.ui import Select
 from model.contact import Contact
 import re
@@ -205,3 +204,31 @@ class ContactHepler:
         work_phone = re.search('W: (.*)', text).group(1)
         phone2 = re.search('P: (.*)', text).group(1)
         return Contact(home_phone=home_phone, mobile_phone=mobile_phone, work_phone=work_phone, phone2=phone2)
+
+    def add_contact_to_group_by_id(self, id, group):
+        self.open_home_page()
+        self.select_contact_by_id(id)
+        self.add_contact_to_group(group)
+        self.open_home_page()
+        self.contact_cache = None
+
+    def add_contact_to_group(self, group):
+        wd = self.app.wd
+        if group is not None:
+            wd.find_element_by_name("to_group").click()
+            Select(wd.find_element_by_css_selector("select[name=\"to_group\"]")).select_by_visible_text(group)
+            wd.find_element_by_name("add").click()
+
+    def remove_contact_from_group_by_id(self, group, id):
+        self.open_home_page()
+        self.delete_contact_to_group(group, id)
+        self.open_home_page()
+        self.contact_cache = None
+
+    def delete_contact_to_group(self, group, id):
+        wd = self.app.wd
+        if group is not None:
+            wd.find_element_by_name("group").click()
+            Select(wd.find_element_by_css_selector("select[name=\"group\"]")).select_by_visible_text(group)
+            wd.find_element_by_xpath("//input[@id='%s']" % id).click()
+            wd.find_element_by_name("remove").click()
