@@ -5,7 +5,6 @@ from fixture.orm import ORMFixture
 from model.group import Group
 
 def test_add_contact_to_group(app, db):
-    app.open_home_page()
     if len(db.get_contact_list()) == 0:
         app.contact.create(
             Contact(firstname="Anonimus_mod", middlename="Anonim_mod",
@@ -15,6 +14,8 @@ def test_add_contact_to_group(app, db):
                     mail2="email@mail2.ru_mod", mail3="email@mail3.ru_mod", homepage="qxl-ex.ru_mod",
                     birthday_year="2000", anniversary_year="2020", address2="Kazan 2_mod",
                     phone2="Home_mod", notes="Notes_mod"))
+    if len(db.get_group_list()) == 0:
+        app.group.create(Group(name='name', header="header", footer="footer"))
     old_groups = db.get_group_list()
     group = random.choice(old_groups)
     old_contacts_in_group = db.get_contact_in_group()
