@@ -216,19 +216,19 @@ class ContactHepler:
         wd = self.app.wd
         if group is not None:
             wd.find_element_by_name("to_group").click()
-            Select(wd.find_element_by_css_selector("select[name=\"to_group\"]")).select_by_visible_text(group)
+            wd.find_element_by_css_selector("select[name='to_group'] [value='%s']" % group).click()
             wd.find_element_by_name("add").click()
 
-    def remove_contact_from_group_by_id(self, group, id):
+    def delete_contact_from_group_by_id(self, group, id):
         self.open_home_page()
         self.delete_contact_to_group(group, id)
         self.open_home_page()
         self.contact_cache = None
 
-    def delete_contact_to_group(self, group, id):
+    def delete_contact_to_group(self, group, group_and_contact_id):
         wd = self.app.wd
         if group is not None:
             wd.find_element_by_name("group").click()
-            Select(wd.find_element_by_css_selector("select[name=\"group\"]")).select_by_visible_text(group)
-            wd.find_element_by_xpath("//input[@id='%s']" % id).click()
+            wd.find_element_by_css_selector("select[name='group'] option[value='%s']" % group_and_contact_id).click()
+            wd.find_element_by_css_selector("td[class='center'] input[type='checkbox']").click()
             wd.find_element_by_name("remove").click()

@@ -4,7 +4,7 @@ import random
 from fixture.orm import ORMFixture
 from model.group import Group
 
-def test_add_contact_to_group(app, db):
+def test_delete_contact_to_group(app, db):
     # проверка есть ли контакт
     if len(db.get_contact_list()) == 0:
         app.contact.create(
@@ -18,15 +18,16 @@ def test_add_contact_to_group(app, db):
     # проверка есть ли группа
     if len(db.get_group_list()) == 0:
         app.group.create(Group(name='name', header="header", footer="footer"))
+    # проверка если ли контакты, добавленные в группу, если нет, то добавляем любой контакт в любую группу
+    if len(db.get_contacts_in_groups_list()) == 0:
+        contact = random.choice(db.get_contacts_not_in_any_group())
+        group = random.choice(db.get_group_without_contacts())
+        app.contact.add_contact_to_group_by_id(contact.id, group.name)
+    contact = random.choice(db.get_contact_in_group())
+    group = random.choice(db.get_group_with_contacts())
+    old_contacts_in_group = db.get_contact_not_in_group()
+    app.contact.delete_contact_from_group_by_id(contact.id, group.id)
+    new_contacts_in_group = db.get_contact_not_in_group()
+    assert len(new_contacts_in_group) - 1 == len(old_contacts_in_group)
 
-    old_groups = db.get_group_list()
-    group = random.choice(old_groups)
-    old_contacts_in_group = db.get_contact_in_group()
-    old_contacts = db.get_contact_list()
-    contact = random.choice(old_contacts)
-    app.contact.add_contact_to_group_by_id(contact.id, group.name)
-    new_contacts_in_group = db.get_contact_in_group()
-    assert len(new_contacts_in_group) -1 == len(old_contacts_in_group)
-    app.contact.remove_contact_from_group_by_id(group.name, contact.id)
-    new_contacts_in_group = db.get_contact_in_group()
-    assert len(old_contacts_in_group) == len(new_contacts_in_group)
+
