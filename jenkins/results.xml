@@ -1,1 +1,236 @@
-<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="6" time="24.060" timestamp="2021-04-12T23:24:06.208657" hostname="Leisan-Home"><testcase classname="test.test_add_group" name="test_add_group[None:;;]" time="13.406" /><testcase classname="test.test_add_group" name="test_add_group[None:nameGqP;header 1 3]jt\\XiQ|+%xo +IX ;footer LH;VS&quot;dQi]" time="1.756" /><testcase classname="test.test_add_group" name="test_add_group[None:name/zAy;header 1sPp_ .&gt;zwe4?9=W;footerZ% ZAi{+f024@ 8x.cxI\\MxjK@\\Vh&gt;AG$(va V;YFh hE%O]N|-ejO%Y:vG7 NO*Dr5Ew3 F&amp;_&quot;r]" time="1.430" /><testcase classname="test.test_add_group" name="test_add_group[None:nameTpr?.z5;headerL}X)bGvJ rhTH{cn$y&lt;!iKbj;footer&lt;`K hi`CWa~D]A;#9L 3N Hqd))s /u3bB3Ib$Uc[Z # d&quot;SHlvv@ gJv% $^&lt;MR /.W2rsCv(u^]" time="1.828" /><testcase classname="test.test_add_group" name="test_add_group[None:nameS}A/;header2 wE fc/D[1?U;footerai!wV)c$:\\i:hBSIb,VF||y+Pa  \\z4R!r/  !7 nj#!m6,$hO  o8W6d&quot;0]" time="1.368" /><testcase classname="test.test_add_group" name="test_add_group[None:nameQbJ@&quot;V;header@&quot;PL~(%t%!7[[N?r&quot;ifO c5;footerV dV vj\\3k;aVcI4A[ }$y7Q!^ 9aW8scwFHvnB  c_/6VqT0T&quot;+ ,&lt;LCM$fE9g\\ =mU~k+KL&amp;(OQ]" time="4.216" /></testsuite></testsuites>
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="5" skipped="0" tests="24" time="79.267" timestamp="2021-04-13T01:02:41.933569" hostname="Leisan-Home"><testcase classname="test.test_add_contact" name="test_add_contact[None::;;;]" time="20.051" /><testcase classname="test.test_add_contact" name="test_add_contact[None:firstnameXr  gfex3Zzb:lastnamej ZjnjXcPZ l iy;address T dOAB0 EeVSKhOE o;mail1HO51lEizQokg2hFEWeS;home_phone7JwHx ]" time="6.972" /><testcase classname="test.test_add_contact" name="test_add_contact[None:firstname I  e5A 5jQ:lastname RDUSVX1xHoF Qx4ptgf9 D 7;address ooMVMzKLw1nkfrux;mail1k3 6S71t ;home_phone]" time="7.086" /><testcase classname="test.test_add_contact" name="test_add_contact[None:firstnameugu:lastnameydfExVZaNTWCea;addressT8BBPWi7zZLddYjJVS7SPrHpgL;mail1Z VYFGtViKVtaK 7e8O0ibpYPN10;home_phone]" time="6.930" /><testcase classname="test.test_add_contact" name="test_add_contact[None:firstname:lastnameJ N 6BdGqZODomU;addressKZsX;mail1 ud4 tvGiMn;home_phone 0VVANLyie]" time="7.118" /><testcase classname="test.test_add_contact" name="test_add_contact[None:firstname0y:lastnameJGpzD3 1 r EqrjL k M;addresshdw kll0ZMuqM2aP4MuIlT3S94HLX;mail1lrPUSR92wGtp M7 Wsg8FxDRvfCHZ;home_phoneXM01S Kh1le]" time="7.056" /><testcase classname="test.test_add_contact_to_group" name="test_add_contact_to_group" time="1.153" /><testcase classname="test.test_add_group" name="test_add_group[None:;;]" time="1.464" /><testcase classname="test.test_add_group" name="test_add_group[None:nameGqP;header 1 3]jt\\XiQ|+%xo +IX ;footer LH;VS&quot;dQi]" time="1.230" /><testcase classname="test.test_add_group" name="test_add_group[None:name/zAy;header 1sPp_ .&gt;zwe4?9=W;footerZ% ZAi{+f024@ 8x.cxI\\MxjK@\\Vh&gt;AG$(va V;YFh hE%O]N|-ejO%Y:vG7 NO*Dr5Ew3 F&amp;_&quot;r]" time="1.196" /><testcase classname="test.test_add_group" name="test_add_group[None:nameTpr?.z5;headerL}X)bGvJ rhTH{cn$y&lt;!iKbj;footer&lt;`K hi`CWa~D]A;#9L 3N Hqd))s /u3bB3Ib$Uc[Z # d&quot;SHlvv@ gJv% $^&lt;MR /.W2rsCv(u^]" time="1.306" /><testcase classname="test.test_add_group" name="test_add_group[None:nameS}A/;header2 wE fc/D[1?U;footerai!wV)c$:\\i:hBSIb,VF||y+Pa  \\z4R!r/  !7 nj#!m6,$hO  o8W6d&quot;0]" time="1.214" /><testcase classname="test.test_add_group" name="test_add_group[None:nameQbJ@&quot;V;header@&quot;PL~(%t%!7[[N?r&quot;ifO c5;footerV dV vj\\3k;aVcI4A[ }$y7Q!^ 9aW8scwFHvnB  c_/6VqT0T&quot;+ ,&lt;LCM$fE9g\\ =mU~k+KL&amp;(OQ]" time="1.211" /><testcase classname="test.test_all_info" name="test_all_info_on_home_page" time="0.941" /><testcase classname="test.test_all_info" name="test_all_info_on_home_page_and_db" time="0.030"><failure message="AssertionError: assert 'mail1k3 6S71...kD b dx Rtaov' == 'mail1k3 6S71...kD b dx Rtaov'&#10;  - mail1k3 6S71t&#10;  + mail1k3 6S71t &#10;  ?              +&#10;    mail2S&#10;    mail3sz48EeJsFIrY9kD b dx Rtaov">app = &lt;fixture.application.Application object at 0x00000015BD71DEB0&gt;
+db = &lt;fixture.db.DbFixture object at 0x00000015BD71D9D0&gt;
+
+    def test_all_info_on_home_page_and_db(app, db):
+        if len(db.get_contact_list()) == 0:
+            app.contact.create(Contact(firstname="Anonimus", middlename="Anonim", lastname="Anonomovich"))
+        ui_list = app.contact.get_contact_list()
+        db_list = db.get_contact_list()
+        assert len(ui_list) == len(db_list)
+        ui_list_sorted = sorted(ui_list, key=Contact.id_or_max)
+        db_list_sorted = sorted(db_list, key=Contact.id_or_max)
+        for i in range(len(db_list)):
+&gt;           assert merge_emails_like_on_home_page(db_list_sorted[i]) == ui_list_sorted[i].all_email_from_home_page
+E           AssertionError: assert 'mail1k3 6S71...kD b dx Rtaov' == 'mail1k3 6S71...kD b dx Rtaov'
+E             - mail1k3 6S71t
+E             + mail1k3 6S71t 
+E             ?              +
+E               mail2S
+E               mail3sz48EeJsFIrY9kD b dx Rtaov
+
+test\test_all_info.py:28: AssertionError</failure></testcase><testcase classname="test.test_db_matches_ui" name="test_group_list" time="1.751"><failure message="assert False">app = &lt;fixture.application.Application object at 0x00000015BD71DEB0&gt;
+db = &lt;fixture.db.DbFixture object at 0x00000015BD71D9D0&gt;
+
+    def test_group_list(app, db):
+        print(timeit(lambda: app.group.get_group_list(), number=1))
+        def clean(group):
+            return Group(id=group.id, name=group.name.strip())
+        print(timeit(lambda: map(clean, db.get_group_list()), number=1000))
+&gt;       assert False # sorted(ui_list, key=Group.id_or_max) == sorted(db_list, key=Group.id_or_max)
+E       assert False
+
+test\test_db_matches_ui.py:11: AssertionError</failure></testcase><testcase classname="test.test_db_matches_ui" name="test_contact_list" time="1.108"><failure message="assert False">app = &lt;fixture.application.Application object at 0x00000015BD71DEB0&gt;
+db = &lt;fixture.db.DbFixture object at 0x00000015BD71D9D0&gt;
+
+    def test_contact_list(app, db):
+        print(timeit(lambda: app.contact.get_contact_list(), number=1))
+        def clean(contact):
+            return Contact(id=contact.id, firstname=contact.firstname.strip(), lastname=contact.lastname.strip())
+        print(timeit(lambda: map(clean, db.get_contact_list()), number=1000))
+&gt;       assert False
+E       assert False
+
+test\test_db_matches_ui.py:19: AssertionError</failure></testcase><testcase classname="test.test_del_contact" name="test_delete_some_contact" time="0.765"><failure message="assert (14 - 1) == 14&#10; +  where 14 = len([1::;;;, 2:firstnameXr  gfex3Zzb:lastnamej ZjnjXcPZ l iy;address T dOAB0 EeVSKhOE o;mail1HO51lEizQokg2hFEWeS;home_phon...GpzD3 1 r EqrjL k M;addresshdw kll0ZMuqM2aP4MuIlT3S94HLX;mail1lrPUSR92wGtp M7 Wsg8FxDRvfCHZ;home_phoneXM01S Kh1le, ...])&#10; +  and   14 = &lt;bound method ContactHepler.count of &lt;fixture.contact.ContactHepler object at 0x00000015BD6F2DF0&gt;&gt;()&#10; +    where &lt;bound method ContactHepler.count of &lt;fixture.contact.ContactHepler object at 0x00000015BD6F2DF0&gt;&gt; = &lt;fixture.contact.ContactHepler object at 0x00000015BD6F2DF0&gt;.count&#10; +      where &lt;fixture.contact.ContactHepler object at 0x00000015BD6F2DF0&gt; = &lt;fixture.application.Application object at 0x00000015BD71DEB0&gt;.contact">app = &lt;fixture.application.Application object at 0x00000015BD71DEB0&gt;
+db = &lt;fixture.db.DbFixture object at 0x00000015BD71D9D0&gt;, check_ui = False
+
+    def test_delete_some_contact(app, db, check_ui):
+        if len(db.get_contact_list()) == 0:
+            app.contact.create(Contact(firstname="Anonimus", middlename="Anonim", lastname="Anonomovich"))
+        old_contacts = db.get_contact_list()
+        contact = random.choice(old_contacts)
+        app.contact.delete_contact_by_id(contact.id)
+&gt;       assert len(old_contacts) - 1 == app.contact.count()
+E       assert (14 - 1) == 14
+E        +  where 14 = len([1::;;;, 2:firstnameXr  gfex3Zzb:lastnamej ZjnjXcPZ l iy;address T dOAB0 EeVSKhOE o;mail1HO51lEizQokg2hFEWeS;home_phon...GpzD3 1 r EqrjL k M;addresshdw kll0ZMuqM2aP4MuIlT3S94HLX;mail1lrPUSR92wGtp M7 Wsg8FxDRvfCHZ;home_phoneXM01S Kh1le, ...])
+E        +  and   14 = &lt;bound method ContactHepler.count of &lt;fixture.contact.ContactHepler object at 0x00000015BD6F2DF0&gt;&gt;()
+E        +    where &lt;bound method ContactHepler.count of &lt;fixture.contact.ContactHepler object at 0x00000015BD6F2DF0&gt;&gt; = &lt;fixture.contact.ContactHepler object at 0x00000015BD6F2DF0&gt;.count
+E        +      where &lt;fixture.contact.ContactHepler object at 0x00000015BD6F2DF0&gt; = &lt;fixture.application.Application object at 0x00000015BD71DEB0&gt;.contact
+
+test\test_del_contact.py:10: AssertionError</failure></testcase><testcase classname="test.test_del_group" name="test_delete_some_group" time="0.875" /><testcase classname="test.test_delete_contact_to_group" name="test_delete_contact_to_group" time="1.912" /><testcase classname="test.test_modify_contact" name="test_modify_some_contact" time="0.153"><failure message="selenium.common.exceptions.NoSuchElementException: Message: Unable to locate element: //*[@href='edit.php?id=13']">app = &lt;fixture.application.Application object at 0x00000015BD71DEB0&gt;
+db = &lt;fixture.db.DbFixture object at 0x00000015BD71D9D0&gt;, check_ui = False
+
+    def test_modify_some_contact(app, db, check_ui):
+        if len(db.get_contact_list()) == 0:
+            app.contact.create(Contact(firstname="Anonimus", middlename="Anonim", lastname="Anonomovich"))
+        old_contacts = db.get_contact_list()
+        index = randrange(len(old_contacts))
+        contact = Contact(firstname="Anonimus_mod", middlename="Anonim_mod",
+                          lastname="Anonomovich_mod", nickname="Anonim_nick_mod", tittle="test_mod", company="MTS_mod",
+                          address="Kazan_mod", home_phone="+7999999999_mod", mobile_phone="+7888888888_mod",
+                          work_phone="+7562562562_mod", fax="+7235235689_mod", mail1="email@mail1.ru_mod",
+                          mail2="email@mail2.ru_mod", mail3="email@mail3.ru_mod", homepage="qxl-ex.ru_mod",
+                          birthday_year="2000", anniversary_year="2020", address2="Kazan 2_mod",
+                          phone2="Home_mod", notes="Notes_mod")
+        contact.id = old_contacts[index].id
+&gt;       app.contact.modify_contact_by_id(contact.id, contact)
+
+test\test_modify_contact.py:18: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+fixture\contact.py:127: in modify_contact_by_id
+    self.open_contact_to_edit_by_id(id)
+fixture\contact.py:142: in open_contact_to_edit_by_id
+    wd.find_element_by_xpath("//*[@href='edit.php?id=%s']" % id).click()
+..\..\shiningpanda\jobs\22901e47\virtualenvs\d41d8cd9\lib\site-packages\selenium\webdriver\remote\webdriver.py:394: in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+..\..\shiningpanda\jobs\22901e47\virtualenvs\d41d8cd9\lib\site-packages\selenium\webdriver\remote\webdriver.py:976: in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+..\..\shiningpanda\jobs\22901e47\virtualenvs\d41d8cd9\lib\site-packages\selenium\webdriver\remote\webdriver.py:321: in execute
+    self.error_handler.check_response(response)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = &lt;selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x00000015BD71D970&gt;
+response = {'status': 404, 'value': '{"value":{"error":"no such element","message":"Unable to locate element: //*[@href=\'edit.ph...ror@chrome://marionette/content/error.js:393:5\\nelement.find/&lt;/&lt;@chrome://marionette/content/element.js:306:16\\n"}}'}
+
+    def check_response(self, response):
+        """
+        Checks that a JSON response from the WebDriver does not have an error.
+    
+        :Args:
+         - response - The JSON response from the WebDriver server as a dictionary
+           object.
+    
+        :Raises: If the response contains an error message.
+        """
+        status = response.get('status', None)
+        if status is None or status == ErrorCode.SUCCESS:
+            return
+        value = None
+        message = response.get("message", "")
+        screen = response.get("screen", "")
+        stacktrace = None
+        if isinstance(status, int):
+            value_json = response.get('value', None)
+            if value_json and isinstance(value_json, basestring):
+                import json
+                try:
+                    value = json.loads(value_json)
+                    if len(value.keys()) == 1:
+                        value = value['value']
+                    status = value.get('error', None)
+                    if status is None:
+                        status = value["status"]
+                        message = value["value"]
+                        if not isinstance(message, basestring):
+                            value = message
+                            message = message.get('message')
+                    else:
+                        message = value.get('message', None)
+                except ValueError:
+                    pass
+    
+        exception_class = ErrorInResponseException
+        if status in ErrorCode.NO_SUCH_ELEMENT:
+            exception_class = NoSuchElementException
+        elif status in ErrorCode.NO_SUCH_FRAME:
+            exception_class = NoSuchFrameException
+        elif status in ErrorCode.NO_SUCH_WINDOW:
+            exception_class = NoSuchWindowException
+        elif status in ErrorCode.STALE_ELEMENT_REFERENCE:
+            exception_class = StaleElementReferenceException
+        elif status in ErrorCode.ELEMENT_NOT_VISIBLE:
+            exception_class = ElementNotVisibleException
+        elif status in ErrorCode.INVALID_ELEMENT_STATE:
+            exception_class = InvalidElementStateException
+        elif status in ErrorCode.INVALID_SELECTOR \
+                or status in ErrorCode.INVALID_XPATH_SELECTOR \
+                or status in ErrorCode.INVALID_XPATH_SELECTOR_RETURN_TYPER:
+            exception_class = InvalidSelectorException
+        elif status in ErrorCode.ELEMENT_IS_NOT_SELECTABLE:
+            exception_class = ElementNotSelectableException
+        elif status in ErrorCode.ELEMENT_NOT_INTERACTABLE:
+            exception_class = ElementNotInteractableException
+        elif status in ErrorCode.INVALID_COOKIE_DOMAIN:
+            exception_class = InvalidCookieDomainException
+        elif status in ErrorCode.UNABLE_TO_SET_COOKIE:
+            exception_class = UnableToSetCookieException
+        elif status in ErrorCode.TIMEOUT:
+            exception_class = TimeoutException
+        elif status in ErrorCode.SCRIPT_TIMEOUT:
+            exception_class = TimeoutException
+        elif status in ErrorCode.UNKNOWN_ERROR:
+            exception_class = WebDriverException
+        elif status in ErrorCode.UNEXPECTED_ALERT_OPEN:
+            exception_class = UnexpectedAlertPresentException
+        elif status in ErrorCode.NO_ALERT_OPEN:
+            exception_class = NoAlertPresentException
+        elif status in ErrorCode.IME_NOT_AVAILABLE:
+            exception_class = ImeNotAvailableException
+        elif status in ErrorCode.IME_ENGINE_ACTIVATION_FAILED:
+            exception_class = ImeActivationFailedException
+        elif status in ErrorCode.MOVE_TARGET_OUT_OF_BOUNDS:
+            exception_class = MoveTargetOutOfBoundsException
+        elif status in ErrorCode.JAVASCRIPT_ERROR:
+            exception_class = JavascriptException
+        elif status in ErrorCode.SESSION_NOT_CREATED:
+            exception_class = SessionNotCreatedException
+        elif status in ErrorCode.INVALID_ARGUMENT:
+            exception_class = InvalidArgumentException
+        elif status in ErrorCode.NO_SUCH_COOKIE:
+            exception_class = NoSuchCookieException
+        elif status in ErrorCode.UNABLE_TO_CAPTURE_SCREEN:
+            exception_class = ScreenshotException
+        elif status in ErrorCode.ELEMENT_CLICK_INTERCEPTED:
+            exception_class = ElementClickInterceptedException
+        elif status in ErrorCode.INSECURE_CERTIFICATE:
+            exception_class = InsecureCertificateException
+        elif status in ErrorCode.INVALID_COORDINATES:
+            exception_class = InvalidCoordinatesException
+        elif status in ErrorCode.INVALID_SESSION_ID:
+            exception_class = InvalidSessionIdException
+        elif status in ErrorCode.UNKNOWN_METHOD:
+            exception_class = UnknownMethodException
+        else:
+            exception_class = WebDriverException
+        if value == '' or value is None:
+            value = response['value']
+        if isinstance(value, basestring):
+            if exception_class == ErrorInResponseException:
+                raise exception_class(response, value)
+            raise exception_class(value)
+        if message == "" and 'message' in value:
+            message = value['message']
+    
+        screen = None
+        if 'screen' in value:
+            screen = value['screen']
+    
+        stacktrace = None
+        if 'stackTrace' in value and value['stackTrace']:
+            stacktrace = []
+            try:
+                for frame in value['stackTrace']:
+                    line = self._value_or_default(frame, 'lineNumber', '')
+                    file = self._value_or_default(frame, 'fileName', '&lt;anonymous&gt;')
+                    if line:
+                        file = "%s:%s" % (file, line)
+                    meth = self._value_or_default(frame, 'methodName', '&lt;anonymous&gt;')
+                    if 'className' in frame:
+                        meth = "%s.%s" % (frame['className'], meth)
+                    msg = "    at %s (%s)"
+                    msg = msg % (meth, file)
+                    stacktrace.append(msg)
+            except TypeError:
+                pass
+        if exception_class == ErrorInResponseException:
+            raise exception_class(response, message)
+        elif exception_class == UnexpectedAlertPresentException:
+            alert_text = None
+            if 'data' in value:
+                alert_text = value['data'].get('text')
+            elif 'alert' in value:
+                alert_text = value['alert'].get('text')
+            raise exception_class(message, screen, stacktrace, alert_text)
+&gt;       raise exception_class(message, screen, stacktrace)
+E       selenium.common.exceptions.NoSuchElementException: Message: Unable to locate element: //*[@href='edit.php?id=13']
+
+..\..\shiningpanda\jobs\22901e47\virtualenvs\d41d8cd9\lib\site-packages\selenium\webdriver\remote\errorhandler.py:242: NoSuchElementException</failure></testcase><testcase classname="test.test_modify_group" name="test_modify_some_group" time="1.519" /><testcase classname="test.test_phones" name="test_phones_on_home_page" time="0.862" /><testcase classname="test.test_phones" name="test_phones_on_contact_view_page" time="4.221" /></testsuite></testsuites>
