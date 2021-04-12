@@ -1,0 +1,67 @@
+{
+  "uid" : "bcbaf17f609ff188",
+  "name" : "test_all_info.test_all_info_on_home_page",
+  "fullName" : "test.test_all_info.test_all_info_on_home_page",
+  "historyId" : "2bf4cad28e23851be9bcca0b1acbbe01",
+  "time" : {
+    "start" : 1618265519365,
+    "stop" : 1618265520569,
+    "duration" : 1204
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 'firstname I e5A 5jQ' == 'firstname I  e5A 5jQ'\n  - firstname I  e5A 5jQ\n  ?            -\n  + firstname I e5A 5jQ",
+  "statusTrace" : "app = <fixture.application.Application object at 0x000000958D3EDA30>\ndb = <fixture.db.DbFixture object at 0x000000958D3ED4F0>\n\n    def test_all_info_on_home_page(app, db):\n        if len(db.get_contact_list()) == 0:\n            app.contact.create(Contact(firstname=\"Anonimus\", middlename=\"Anonim\", lastname=\"Anonomovich\"))\n        old_contacts = app.contact.get_contact_list()\n        index = randrange(len(old_contacts))\n        contact_from_home_page = app.contact.get_contact_list()[index]\n        contact_from_edit_page = app.contact.get_contact_info_from_edit_page(index)\n        assert contact_from_home_page.lastname == contact_from_edit_page.lastname\n>       assert contact_from_home_page.firstname == contact_from_edit_page.firstname\nE       AssertionError: assert 'firstname I e5A 5jQ' == 'firstname I  e5A 5jQ'\nE         - firstname I  e5A 5jQ\nE         ?            -\nE         + firstname I e5A 5jQ\n\ntest\\test_all_info.py:14: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "Leisan-Home"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "2520-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "test"
+  }, {
+    "name" : "testClass",
+    "value" : "test"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_all_info.test_all_info_on_home_page"
+  }, {
+    "name" : "package",
+    "value" : "test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "bcbaf17f609ff188.json",
+  "parameterValues" : [ ]
+}

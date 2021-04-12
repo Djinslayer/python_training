@@ -1,12 +1,12 @@
 {
-  "uid" : "9ee2709c2e6edf2a",
-  "name" : "test_add_group.test_add_group[None:;;]",
-  "fullName" : "test.test_add_group.test_add_group[None:;;]",
-  "historyId" : "fe8c9c70df6cbebba27db44605aa46f9",
+  "uid" : "2e9434e233dafa8e",
+  "name" : "test_add_group.test_add_group[None:name/zAy;header 1sPp_ .>zwe4?9=W;footerZ% ZAi{+f024@ 8x.cxI\\\\MxjK@\\\\Vh>AG$(va V;YFh hE%O]N|-ejO%Y:vG7 NO*Dr5Ew3 F&_\"r]",
+  "fullName" : "test.test_add_group.test_add_group[None:name/zAy;header 1sPp_ .>zwe4?9=W;footerZ% ZAi{+f024@ 8x.cxI\\\\MxjK@\\\\Vh>AG$(va V;YFh hE%O]N|-ejO%Y:vG7 NO*Dr5Ew3 F&_\"r]",
+  "historyId" : "644742d917ea3a7625c5ed7e53fdcd23",
   "time" : {
-    "start" : 1618264531605,
-    "stop" : 1618264545786,
-    "duration" : 14181
+    "start" : 1618265512561,
+    "stop" : 1618265514249,
+    "duration" : 1688
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -19,55 +19,55 @@
     "steps" : [ {
       "name" : "Given a group list",
       "time" : {
-        "start" : 1618264542711,
-        "stop" : 1618264542744,
-        "duration" : 33
+        "start" : 1618265512601,
+        "stop" : 1618265512622,
+        "duration" : 21
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "hasContent" : false,
-      "stepsCount" : 0,
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
     }, {
-      "name" : "when i add a group None:;; to the list",
+      "name" : "when i add a group None:name/zAy;header 1sPp_ .>zwe4?9=W;footerZ% ZAi{+f024@ 8x.cxI\\MxjK@\\Vh>AG$(va V;YFh hE%O]N|-ejO%Y:vG7 NO*Dr5Ew3 F&_\"r to the list",
       "time" : {
-        "start" : 1618264542756,
-        "stop" : 1618264545753,
-        "duration" : 2997
+        "start" : 1618265512630,
+        "stop" : 1618265514204,
+        "duration" : 1574
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "hasContent" : false,
-      "stepsCount" : 0,
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
     }, {
       "name" : "then the new group list is equal to the old list with the added group",
       "time" : {
-        "start" : 1618264545762,
-        "stop" : 1618264545785,
-        "duration" : 23
+        "start" : 1618265514220,
+        "stop" : 1618265514249,
+        "duration" : 29
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "hasContent" : false,
-      "stepsCount" : 0,
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "hasContent" : true,
-    "stepsCount" : 3,
     "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 3
   },
   "afterStages" : [ ],
   "labels" : [ {
@@ -84,7 +84,7 @@
     "value" : "normal"
   }, {
     "name" : "thread",
-    "value" : "10400-MainThread"
+    "value" : "2520-MainThread"
   }, {
     "name" : "suite",
     "value" : "test"
@@ -93,7 +93,7 @@
     "value" : "test"
   }, {
     "name" : "testMethod",
-    "value" : "test_add_group.test_add_group[None:;;]"
+    "value" : "test_add_group.test_add_group[None:name/zAy;header 1sPp_ .>zwe4?9=W;footerZ% ZAi{+f024@ 8x.cxI\\\\MxjK@\\\\Vh>AG$(va V;YFh hE%O]N|-ejO%Y:vG7 NO*Dr5Ew3 F&_\"r]"
   }, {
     "name" : "package",
     "value" : "test"
@@ -111,6 +111,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "9ee2709c2e6edf2a.json",
+  "source" : "2e9434e233dafa8e.json",
   "parameterValues" : [ ]
 }

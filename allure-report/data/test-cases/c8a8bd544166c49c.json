@@ -1,0 +1,67 @@
+{
+  "uid" : "c8a8bd544166c49c",
+  "name" : "test_all_info.test_all_info_on_home_page_and_db",
+  "fullName" : "test.test_all_info.test_all_info_on_home_page_and_db",
+  "historyId" : "f8c0ff7a44e4ac7b1fd5178c5e69e0f8",
+  "time" : {
+    "start" : 1618265520592,
+    "stop" : 1618265520631,
+    "duration" : 39
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 'mail1k3 6S71...kD b dx Rtaov' == 'mail1k3 6S71...kD b dx Rtaov'\n  - mail1k3 6S71t\n  + mail1k3 6S71t \n  ?              +\n    mail2S\n    mail3sz48EeJsFIrY9kD b dx Rtaov",
+  "statusTrace" : "app = <fixture.application.Application object at 0x000000958D3EDA30>\ndb = <fixture.db.DbFixture object at 0x000000958D3ED4F0>\n\n    def test_all_info_on_home_page_and_db(app, db):\n        if len(db.get_contact_list()) == 0:\n            app.contact.create(Contact(firstname=\"Anonimus\", middlename=\"Anonim\", lastname=\"Anonomovich\"))\n        ui_list = app.contact.get_contact_list()\n        db_list = db.get_contact_list()\n        assert len(ui_list) == len(db_list)\n        ui_list_sorted = sorted(ui_list, key=Contact.id_or_max)\n        db_list_sorted = sorted(db_list, key=Contact.id_or_max)\n        for i in range(len(db_list)):\n>           assert merge_emails_like_on_home_page(db_list_sorted[i]) == ui_list_sorted[i].all_email_from_home_page\nE           AssertionError: assert 'mail1k3 6S71...kD b dx Rtaov' == 'mail1k3 6S71...kD b dx Rtaov'\nE             - mail1k3 6S71t\nE             + mail1k3 6S71t \nE             ?              +\nE               mail2S\nE               mail3sz48EeJsFIrY9kD b dx Rtaov\n\ntest\\test_all_info.py:28: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "Leisan-Home"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "2520-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "test"
+  }, {
+    "name" : "testClass",
+    "value" : "test"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_all_info.test_all_info_on_home_page_and_db"
+  }, {
+    "name" : "package",
+    "value" : "test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "c8a8bd544166c49c.json",
+  "parameterValues" : [ ]
+}

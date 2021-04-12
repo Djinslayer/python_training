@@ -1,0 +1,61 @@
+{
+  "uid" : "2d445a272df1ab8f",
+  "name" : "test_delete_contact_to_group.test_delete_contact_to_group",
+  "fullName" : "test.test_delete_contact_to_group.test_delete_contact_to_group",
+  "historyId" : "6ca19603c52c05b9745c1d86ddf6f998",
+  "time" : {
+    "start" : 1618265525712,
+    "stop" : 1618265527842,
+    "duration" : 2130
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "Leisan-Home"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "2520-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "test"
+  }, {
+    "name" : "testClass",
+    "value" : "test"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_delete_contact_to_group.test_delete_contact_to_group"
+  }, {
+    "name" : "package",
+    "value" : "test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2d445a272df1ab8f.json",
+  "parameterValues" : [ ]
+}

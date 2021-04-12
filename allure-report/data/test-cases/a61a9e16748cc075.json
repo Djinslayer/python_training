@@ -1,0 +1,67 @@
+{
+  "uid" : "a61a9e16748cc075",
+  "name" : "test_phones.test_phones_on_contact_view_page",
+  "fullName" : "test.test_phones.test_phones_on_contact_view_page",
+  "historyId" : "4dd1274c0aed3366704635a573fb1a8e",
+  "time" : {
+    "start" : 1618265530913,
+    "stop" : 1618265531260,
+    "duration" : 347
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "AttributeError: 'NoneType' object has no attribute 'group'",
+  "statusTrace" : "app = <fixture.application.Application object at 0x000000958D3EDA30>\n\n    def test_phones_on_contact_view_page(app):\n        old_contacts = app.contact.get_contact_list()\n        index = randrange(len(old_contacts))\n>       contact_from_view_page = app.contact.get_contact_info_from_view_page(index)\n\ntest\\test_phones.py:15: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <fixture.contact.ContactHepler object at 0x000000958D3ED130>, index = 2\n\n    def get_contact_info_from_view_page(self, index):\n        wd = self.app.wd\n        self.open_contact_view_by_index(index)\n        text = wd.find_element_by_id('content').text\n>       home_phone = re.search(\"H: (.*)\", text).group(1)\nE       AttributeError: 'NoneType' object has no attribute 'group'\n\nfixture\\contact.py:202: AttributeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "Leisan-Home"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "2520-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "test"
+  }, {
+    "name" : "testClass",
+    "value" : "test"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_phones.test_phones_on_contact_view_page"
+  }, {
+    "name" : "package",
+    "value" : "test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "a61a9e16748cc075.json",
+  "parameterValues" : [ ]
+}

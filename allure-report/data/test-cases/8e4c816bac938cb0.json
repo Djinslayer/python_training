@@ -1,0 +1,61 @@
+{
+  "uid" : "8e4c816bac938cb0",
+  "name" : "test_add_contact.test_add_contact[None:firstname:lastnameJ N 6BdGqZODomU;addressKZsX;mail1 ud4 tvGiMn;home_phone 0VVANLyie]",
+  "fullName" : "test.test_add_contact.test_add_contact[None:firstname:lastnameJ N 6BdGqZODomU;addressKZsX;mail1 ud4 tvGiMn;home_phone 0VVANLyie]",
+  "historyId" : "fe82b3864b6a3fe24155e79f77349ca6",
+  "time" : {
+    "start" : 1618265492989,
+    "stop" : 1618265500491,
+    "duration" : 7502
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "Leisan-Home"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "2520-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "test"
+  }, {
+    "name" : "testClass",
+    "value" : "test"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_add_contact.test_add_contact[None:firstname:lastnameJ N 6BdGqZODomU;addressKZsX;mail1 ud4 tvGiMn;home_phone 0VVANLyie]"
+  }, {
+    "name" : "package",
+    "value" : "test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8e4c816bac938cb0.json",
+  "parameterValues" : [ ]
+}

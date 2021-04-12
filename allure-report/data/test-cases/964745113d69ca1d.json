@@ -1,12 +1,12 @@
 {
-  "uid" : "4d2a9d4135fad60e",
-  "name" : "test_add_group.test_add_group[None:nameQbJ@\"V;header@\"PL~(%t%!7[[N?r\"ifO c5;footerV dV vj\\\\3k;aVcI4A[ }$y7Q!^ 9aW8scwFHvnB  c_/6VqT0T\"+ ,<LCM$fE9g\\\\ =mU~k+KL&(OQ]",
-  "fullName" : "test.test_add_group.test_add_group[None:nameQbJ@\"V;header@\"PL~(%t%!7[[N?r\"ifO c5;footerV dV vj\\\\3k;aVcI4A[ }$y7Q!^ 9aW8scwFHvnB  c_/6VqT0T\"+ ,<LCM$fE9g\\\\ =mU~k+KL&(OQ]",
-  "historyId" : "11d89f6efa68f9a3f6334b5db6fd1433",
+  "uid" : "964745113d69ca1d",
+  "name" : "test_add_group.test_add_group[None:nameTpr?.z5;headerL}X)bGvJ rhTH{cn$y<!iKbj;footer<`K hi`CWa~D]A;#9L 3N Hqd))s /u3bB3Ib$Uc[Z # d\"SHlvv@ gJv% $^<MR /.W2rsCv(u^]",
+  "fullName" : "test.test_add_group.test_add_group[None:nameTpr?.z5;headerL}X)bGvJ rhTH{cn$y<!iKbj;footer<`K hi`CWa~D]A;#9L 3N Hqd))s /u3bB3Ib$Uc[Z # d\"SHlvv@ gJv% $^<MR /.W2rsCv(u^]",
+  "historyId" : "d1271a4ba9c645a205683384750c8899",
   "time" : {
-    "start" : 1618264553018,
-    "stop" : 1618264554409,
-    "duration" : 1391
+    "start" : 1618265514267,
+    "stop" : 1618265516174,
+    "duration" : 1907
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -19,55 +19,55 @@
     "steps" : [ {
       "name" : "Given a group list",
       "time" : {
-        "start" : 1618264553060,
-        "stop" : 1618264553081,
+        "start" : 1618265514312,
+        "stop" : 1618265514333,
         "duration" : 21
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "hasContent" : false,
-      "stepsCount" : 0,
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
     }, {
-      "name" : "when i add a group None:nameQbJ@\"V;header@\"PL~(%t%!7[[N?r\"ifO c5;footerV dV vj\\3k;aVcI4A[ }$y7Q!^ 9aW8scwFHvnB  c_/6VqT0T\"+ ,<LCM$fE9g\\ =mU~k+KL&(OQ to the list",
+      "name" : "when i add a group None:nameTpr?.z5;headerL}X)bGvJ rhTH{cn$y<!iKbj;footer<`K hi`CWa~D]A;#9L 3N Hqd))s /u3bB3Ib$Uc[Z # d\"SHlvv@ gJv% $^<MR /.W2rsCv(u^ to the list",
       "time" : {
-        "start" : 1618264553089,
-        "stop" : 1618264554372,
-        "duration" : 1283
+        "start" : 1618265514342,
+        "stop" : 1618265516141,
+        "duration" : 1799
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "hasContent" : false,
-      "stepsCount" : 0,
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
     }, {
       "name" : "then the new group list is equal to the old list with the added group",
       "time" : {
-        "start" : 1618264554382,
-        "stop" : 1618264554408,
-        "duration" : 26
+        "start" : 1618265516151,
+        "stop" : 1618265516173,
+        "duration" : 22
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "hasContent" : false,
-      "stepsCount" : 0,
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "hasContent" : true,
-    "stepsCount" : 3,
     "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 3
   },
   "afterStages" : [ ],
   "labels" : [ {
@@ -84,7 +84,7 @@
     "value" : "normal"
   }, {
     "name" : "thread",
-    "value" : "10400-MainThread"
+    "value" : "2520-MainThread"
   }, {
     "name" : "suite",
     "value" : "test"
@@ -93,7 +93,7 @@
     "value" : "test"
   }, {
     "name" : "testMethod",
-    "value" : "test_add_group.test_add_group[None:nameQbJ@\"V;header@\"PL~(%t%!7[[N?r\"ifO c5;footerV dV vj\\\\3k;aVcI4A[ }$y7Q!^ 9aW8scwFHvnB  c_/6VqT0T\"+ ,<LCM$fE9g\\\\ =mU~k+KL&(OQ]"
+    "value" : "test_add_group.test_add_group[None:nameTpr?.z5;headerL}X)bGvJ rhTH{cn$y<!iKbj;footer<`K hi`CWa~D]A;#9L 3N Hqd))s /u3bB3Ib$Uc[Z # d\"SHlvv@ gJv% $^<MR /.W2rsCv(u^]"
   }, {
     "name" : "package",
     "value" : "test"
@@ -111,6 +111,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "4d2a9d4135fad60e.json",
+  "source" : "964745113d69ca1d.json",
   "parameterValues" : [ ]
 }

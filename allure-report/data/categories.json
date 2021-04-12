@@ -1,5 +1,107 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
-  "name" : "categories",
-  "children" : [ ]
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert 'firstname I e5A 5jQ' == 'firstname I  e5A 5jQ'\n  - firstname I  e5A 5jQ\n  ?            -\n  + firstname I e5A 5jQ",
+      "children" : [ {
+        "name" : "test_all_info.test_all_info_on_home_page",
+        "uid" : "bcbaf17f609ff188",
+        "parentUid" : "1b2a2b5d80bcf34ba252f76ac265a15b",
+        "status" : "failed",
+        "time" : {
+          "start" : 1618265519365,
+          "stop" : 1618265520569,
+          "duration" : 1204
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1b2a2b5d80bcf34ba252f76ac265a15b"
+    }, {
+      "name" : "AssertionError: assert 'mail1k3 6S71...kD b dx Rtaov' == 'mail1k3 6S71...kD b dx Rtaov'\n  - mail1k3 6S71t\n  + mail1k3 6S71t \n  ?              +\n    mail2S\n    mail3sz48EeJsFIrY9kD b dx Rtaov",
+      "children" : [ {
+        "name" : "test_all_info.test_all_info_on_home_page_and_db",
+        "uid" : "c8a8bd544166c49c",
+        "parentUid" : "ec52d76df8f6d21447f7fd9c6ec4a534",
+        "status" : "failed",
+        "time" : {
+          "start" : 1618265520592,
+          "stop" : 1618265520631,
+          "duration" : 39
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ec52d76df8f6d21447f7fd9c6ec4a534"
+    }, {
+      "name" : "AssertionError: assert False",
+      "children" : [ {
+        "name" : "test_db_matches_ui.test_group_list",
+        "uid" : "d4058342a855f44c",
+        "parentUid" : "8d89788b03808d3beec6ddf8e7d75f3d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1618265520651,
+          "stop" : 1618265522544,
+          "duration" : 1893
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_db_matches_ui.test_contact_list",
+        "uid" : "c2819d518a6fcd3d",
+        "parentUid" : "8d89788b03808d3beec6ddf8e7d75f3d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1618265522563,
+          "stop" : 1618265524051,
+          "duration" : 1488
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8d89788b03808d3beec6ddf8e7d75f3d"
+    }, {
+      "name" : "NoSuchElementException: Message: Unable to locate element: //*[@href='edit.php?id=20']\n",
+      "children" : [ {
+        "name" : "test_modify_contact.test_modify_some_contact",
+        "uid" : "8713be6fc7a1af33",
+        "parentUid" : "11aff5545bde4cd56bf4c23661d9deb3",
+        "status" : "failed",
+        "time" : {
+          "start" : 1618265527861,
+          "stop" : 1618265528068,
+          "duration" : 207
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "11aff5545bde4cd56bf4c23661d9deb3"
+    }, {
+      "name" : "AttributeError: 'NoneType' object has no attribute 'group'",
+      "children" : [ {
+        "name" : "test_phones.test_phones_on_contact_view_page",
+        "uid" : "a61a9e16748cc075",
+        "parentUid" : "26a13ba89ee6f0ffb9c65acd0f389856",
+        "status" : "failed",
+        "time" : {
+          "start" : 1618265530913,
+          "stop" : 1618265531260,
+          "duration" : 347
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "26a13ba89ee6f0ffb9c65acd0f389856"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
 }

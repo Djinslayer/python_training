@@ -1,12 +1,12 @@
 {
-  "uid" : "df664ef83612afd3",
-  "name" : "test_add_group.test_add_group[None:nameTpr?.z5;headerL}X)bGvJ rhTH{cn$y<!iKbj;footer<`K hi`CWa~D]A;#9L 3N Hqd))s /u3bB3Ib$Uc[Z # d\"SHlvv@ gJv% $^<MR /.W2rsCv(u^]",
-  "fullName" : "test.test_add_group.test_add_group[None:nameTpr?.z5;headerL}X)bGvJ rhTH{cn$y<!iKbj;footer<`K hi`CWa~D]A;#9L 3N Hqd))s /u3bB3Ib$Uc[Z # d\"SHlvv@ gJv% $^<MR /.W2rsCv(u^]",
-  "historyId" : "d1271a4ba9c645a205683384750c8899",
+  "uid" : "8809ba7cabae5efa",
+  "name" : "test_add_group.test_add_group[None:nameGqP;header 1 3]jt\\\\XiQ|+%xo +IX ;footer LH;VS\"dQi]",
+  "fullName" : "test.test_add_group.test_add_group[None:nameGqP;header 1 3]jt\\\\XiQ|+%xo +IX ;footer LH;VS\"dQi]",
+  "historyId" : "adb6cd8d7ac2ea54aae563d9cdfa18a3",
   "time" : {
-    "start" : 1618264549153,
-    "stop" : 1618264551499,
-    "duration" : 2346
+    "start" : 1618265510627,
+    "stop" : 1618265512545,
+    "duration" : 1918
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -19,55 +19,55 @@
     "steps" : [ {
       "name" : "Given a group list",
       "time" : {
-        "start" : 1618264549193,
-        "stop" : 1618264549220,
-        "duration" : 27
+        "start" : 1618265510667,
+        "stop" : 1618265510688,
+        "duration" : 21
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "hasContent" : false,
-      "stepsCount" : 0,
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
     }, {
-      "name" : "when i add a group None:nameTpr?.z5;headerL}X)bGvJ rhTH{cn$y<!iKbj;footer<`K hi`CWa~D]A;#9L 3N Hqd))s /u3bB3Ib$Uc[Z # d\"SHlvv@ gJv% $^<MR /.W2rsCv(u^ to the list",
+      "name" : "when i add a group None:nameGqP;header 1 3]jt\\XiQ|+%xo +IX ;footer LH;VS\"dQi to the list",
       "time" : {
-        "start" : 1618264549230,
-        "stop" : 1618264551463,
-        "duration" : 2233
+        "start" : 1618265510696,
+        "stop" : 1618265512512,
+        "duration" : 1816
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "hasContent" : false,
-      "stepsCount" : 0,
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
     }, {
       "name" : "then the new group list is equal to the old list with the added group",
       "time" : {
-        "start" : 1618264551474,
-        "stop" : 1618264551499,
-        "duration" : 25
+        "start" : 1618265512519,
+        "stop" : 1618265512545,
+        "duration" : 26
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ ],
       "parameters" : [ ],
-      "hasContent" : false,
-      "stepsCount" : 0,
       "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "hasContent" : true,
-    "stepsCount" : 3,
     "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 3
   },
   "afterStages" : [ ],
   "labels" : [ {
@@ -84,7 +84,7 @@
     "value" : "normal"
   }, {
     "name" : "thread",
-    "value" : "10400-MainThread"
+    "value" : "2520-MainThread"
   }, {
     "name" : "suite",
     "value" : "test"
@@ -93,7 +93,7 @@
     "value" : "test"
   }, {
     "name" : "testMethod",
-    "value" : "test_add_group.test_add_group[None:nameTpr?.z5;headerL}X)bGvJ rhTH{cn$y<!iKbj;footer<`K hi`CWa~D]A;#9L 3N Hqd))s /u3bB3Ib$Uc[Z # d\"SHlvv@ gJv% $^<MR /.W2rsCv(u^]"
+    "value" : "test_add_group.test_add_group[None:nameGqP;header 1 3]jt\\\\XiQ|+%xo +IX ;footer LH;VS\"dQi]"
   }, {
     "name" : "package",
     "value" : "test"
@@ -111,6 +111,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "df664ef83612afd3.json",
+  "source" : "8809ba7cabae5efa.json",
   "parameterValues" : [ ]
 }

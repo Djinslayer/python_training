@@ -1,0 +1,61 @@
+{
+  "uid" : "d87a1de77ac988d7",
+  "name" : "test_add_contact.test_add_contact[None:firstnameugu:lastnameydfExVZaNTWCea;addressT8BBPWi7zZLddYjJVS7SPrHpgL;mail1Z VYFGtViKVtaK 7e8O0ibpYPN10;home_phone]",
+  "fullName" : "test.test_add_contact.test_add_contact[None:firstnameugu:lastnameydfExVZaNTWCea;addressT8BBPWi7zZLddYjJVS7SPrHpgL;mail1Z VYFGtViKVtaK 7e8O0ibpYPN10;home_phone]",
+  "historyId" : "4b1ca08be0f700a5a290068a78cbecdd",
+  "time" : {
+    "start" : 1618265485941,
+    "stop" : 1618265492966,
+    "duration" : 7025
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "Leisan-Home"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "2520-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "test"
+  }, {
+    "name" : "testClass",
+    "value" : "test"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_add_contact.test_add_contact[None:firstnameugu:lastnameydfExVZaNTWCea;addressT8BBPWi7zZLddYjJVS7SPrHpgL;mail1Z VYFGtViKVtaK 7e8O0ibpYPN10;home_phone]"
+  }, {
+    "name" : "package",
+    "value" : "test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d87a1de77ac988d7.json",
+  "parameterValues" : [ ]
+}
