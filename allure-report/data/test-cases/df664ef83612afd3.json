@@ -1,0 +1,116 @@
+{
+  "uid" : "df664ef83612afd3",
+  "name" : "test_add_group.test_add_group[None:nameTpr?.z5;headerL}X)bGvJ rhTH{cn$y<!iKbj;footer<`K hi`CWa~D]A;#9L 3N Hqd))s /u3bB3Ib$Uc[Z # d\"SHlvv@ gJv% $^<MR /.W2rsCv(u^]",
+  "fullName" : "test.test_add_group.test_add_group[None:nameTpr?.z5;headerL}X)bGvJ rhTH{cn$y<!iKbj;footer<`K hi`CWa~D]A;#9L 3N Hqd))s /u3bB3Ib$Uc[Z # d\"SHlvv@ gJv% $^<MR /.W2rsCv(u^]",
+  "historyId" : "d1271a4ba9c645a205683384750c8899",
+  "time" : {
+    "start" : 1618264549153,
+    "stop" : 1618264551499,
+    "duration" : 2346
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Given a group list",
+      "time" : {
+        "start" : 1618264549193,
+        "stop" : 1618264549220,
+        "duration" : 27
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "when i add a group None:nameTpr?.z5;headerL}X)bGvJ rhTH{cn$y<!iKbj;footer<`K hi`CWa~D]A;#9L 3N Hqd))s /u3bB3Ib$Uc[Z # d\"SHlvv@ gJv% $^<MR /.W2rsCv(u^ to the list",
+      "time" : {
+        "start" : 1618264549230,
+        "stop" : 1618264551463,
+        "duration" : 2233
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "then the new group list is equal to the old list with the added group",
+      "time" : {
+        "start" : 1618264551474,
+        "stop" : 1618264551499,
+        "duration" : 25
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 3,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "host",
+    "value" : "Leisan-Home"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "10400-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "test"
+  }, {
+    "name" : "testClass",
+    "value" : "test"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_add_group.test_add_group[None:nameTpr?.z5;headerL}X)bGvJ rhTH{cn$y<!iKbj;footer<`K hi`CWa~D]A;#9L 3N Hqd))s /u3bB3Ib$Uc[Z # d\"SHlvv@ gJv% $^<MR /.W2rsCv(u^]"
+  }, {
+    "name" : "package",
+    "value" : "test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "df664ef83612afd3.json",
+  "parameterValues" : [ ]
+}
